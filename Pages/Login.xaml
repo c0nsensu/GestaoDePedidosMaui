@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoDePedidosMaui.Pages.Login"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <Image Source="fundo.png" Aspect="AspectFill" />
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+            Margin="16"
+            Padding="16">
+
+            <Image Source="gdp.png"                
+                Aspect="AspectFit"
+                SemanticProperties.Description="Logo Gestão de Pedidos" 
+                HeightRequest="80"
+                Margin="35"/>
+
+            <Entry Placeholder="Digite seu e-mail"
+                    x:Name="txtEmail"
+                    TextColor="White"
+                    Margin="0, 0, 0, 10"/>
+
+            <Entry Placeholder="Digite sua senha" 
+                    x:Name="txtSenha"
+                    TextColor="White"
+                    Margin="0, 0, 10, 15"/>
+
+            <Button Text="Entrar" 
+                x:Name="btnEntrar"
+                Clicked="btnEntrar_Clicked"/>
+
+            <Button Text="Registre-se" 
+                x:Name="Registrar" 
+                Clicked="btnRegistrar_Clicked"/>
+
+            <Label HorizontalTextAlignment="Center" TextColor="White">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Ao utilizar nosso app você concorda com nossos &#10; &#10;"/>
+                        <Span Text="Termos " TextDecorations="Underline"/>
+                        <Span Text="e "/>
+                        <Span Text="Condições " TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+        
+    </Grid>
+
+</ContentPage>

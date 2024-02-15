@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoDePedidosMaui.Pages.CadastroCliente"
+             xmlns:local="clr-namespace:GestaoDePedidosMaui"
+             NavigationPage.HasNavigationBar="False">
+    
+    <ScrollView VerticalScrollBarVisibility="Always" VerticalOptions="FillAndExpand">
+        <StackLayout Padding="30,0">
+
+            <Label Text="Cadastro de Cliente" 
+                   FontFamily="DmSemiBold"
+                   FontSize="Large"
+                   VerticalOptions="Center"
+                   Margin="50,0, 20, 0"/>
+
+            <Label Text="CPF/CNPJ" />
+            <Entry Placeholder="XX.XXX.XXX/XXXX-XX" x:Name="txtCpf"/>
+
+            <Label Text="Nome" />
+            <Entry x:Name="txtNome"/>
+        
+            <Label Text="Nome Fantasia" />
+            <Entry x:Name="txtNomeFantasia"/>
+
+            <Label Text="CEP" />
+            <Entry x:Name="txtCep"/>
+
+            <Label Text="Endereço" />
+            <Entry x:Name="txtEndereco"/>
+
+            <Label Text="Número" />
+            <Entry x:Name="intNumero" />
+
+            <Label Text="Bairro"/>
+            <Entry x:Name="txtBairro"/>
+
+            <!--<local:EntrySemBorda Placeholder="Entry Custom"/>-->
+
+            <Picker x:Name="picker" Title="Select a monkey">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Baboon</x:String>
+                        <x:String>Capuchin Monkey</x:String>
+                        <x:String>Blue Monkey</x:String>
+                        <x:String>Squirrel Monkey</x:String>
+                        <x:String>Golden Lion Tamarin</x:String>
+                        <x:String>Howler Monkey</x:String>
+                        <x:String>Japanese Macaque</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Contato" />
+            <Entry x:Name="txtContato"/>
+
+            <Label Text="Telefone" />
+            <Entry x:Name="txtTelefone" />
+
+            <Label Text="Celular" />
+            <Entry x:Name="txtCelular"/>
+
+            <Label Text="E-mail" />
+            <Entry x:Name="txtEmail"/>
+
+            <Button Text="Salvar" 
+                x:Name="btnSalvar" 
+                Clicked="btnSalvar_Clicked"/>
+        </StackLayout>
+        
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GestaoDePedidosMaui.Pages.Inicio"
+             Title="Inicio"
+             NavigationPage.HasNavigationBar="True">
+    
+    <StackLayout Margin="50, 120">
+        <Label Text="Olá, [User]!"
+               FontFamily="DmSemiBold"
+               FontSize="Large"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Button Text="Novo Cliente" 
+                x:Name="btnNovoCliente" 
+                Clicked="btnNovoCliente_Clicked"/>
+        <Button Text="Novo Produto" 
+                x:Name="btnNovoProduto" 
+                Clicked="btnNovoCliente_Clicked"/>
+        <Button Text="Novo Pedido" 
+                x:Name="btnNovoPedido" 
+                Clicked="btnNovoPedido_Clicked_1"/>
+    </StackLayout>
+</ContentPage>
